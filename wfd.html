@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PTE WFD 练习</title>
+  <link rel="stylesheet" href="wfd.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PTE WFD 练习</h1>
+    
+    <!-- 音频控制 -->
+    <div class="audio-controls">
+      <audio id="audioPlayer" controls></audio>
+      <button id="playBtn">播放 (剩余次数: <span id="playCount">2</span>)</button>
+    </div>
+
+    <!-- 答题区域 -->
+    <div class="answer-area">
+      <textarea id="userInput" placeholder="请输入你听到的内容..."></textarea>
+      <button id="submitBtn">提交答案</button>
+    </div>
+
+    <!-- 结果展示 -->
+    <div class="result-box">
+      <h3>你的答案:</h3>
+      <div id="userAnswerHighlight" class="answer-text"></div>
+      <h3>正确答案:</h3>
+      <div id="correctAnswerHighlight" class="answer-text"></div>
+      <p>得分: <span id="scoreDisplay"></span></p>
+      <p>中文翻译: <span id="chineseTranslation"></span></p>
+    </div>
+
+    <!-- 导航控制 -->
+    <div class="navigation">
+      <button id="prevBtn">上一题</button>
+      <button id="nextBtn">下一题</button>
+      <button id="starBtn">标星</button>
+      <button id="showAnswerBtn">显示答案</button>
+    </div>
+
+    <!-- 题目编号导航 -->
+    <div id="questionNumbers" class="question-numbers"></div>
+  </div>
+
+  <script src="wfd.js"></script>
+</body>
+</html>
